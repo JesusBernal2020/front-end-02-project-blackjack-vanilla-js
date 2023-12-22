@@ -3,32 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BlackJack</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
     />
+    <title>BlackJack</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!--star title-->
-    <header class="titulo">BlackJack</header>
+    <header class="titulo">
+      <h1 class="title-container">
+        <span>
+          <img class="carta-title" src="assets/cartas/red_back.png" alt="" />
+        </span>
+        BlackJack
+        <span
+          ><img class="carta-title" src="assets/cartas/grey_back.png" alt=""
+        /></span>
+      </h1>
+    </header>
     <!-- end title-->
     <!-- btns start -->
     <div class="row mt-2">
-      <div class="col text-center">
-        <button class="btn btn-danger">Nuevo Juego</button>
+      <div class="btn-container col text-center">
+        <button class="btn-start btn-danger">Nuevo Juego</button>
         <button class="btn btn-primary">Pedir Carta</button>
         <button class="btn btn-primary">Detener</button>
       </div>
     </div>
     <!-- btns end -->
     <!-- carts jugador 1 start -->
-    <div class="row container mt-2">
+    <div class="card-box">
       <div class="col">
-        <h1>Jugador 1 - <small>0</small></h1>
+        <h2 class="title-card">Jugador 1 - <small>0</small></h2>
         <div id="jugador-cartas">
           <img class="carta" src="assets/cartas/2C.png" alt="" />
           <!-- <img class="carta" src="assets/cartas/2C.png" alt="" />
@@ -39,14 +48,14 @@
     </div>
     <!-- carts jugador 1 end -->
     <!-- carts jugador 2 start -->
-    <div class="row container mt-2">
+    <div class="card-box">
       <div class="col">
-        <h1>Computadora - <small>0</small></h1>
+        <h2 class="title-card">Computadora - <small>0</small></h2>
         <div id="computadora-cartas">
           <img class="carta" src="assets/cartas/3C.png" alt="" />
-          <!-- <img class="carta" src="assets/cartas/3C.png" alt="" />
           <img class="carta" src="assets/cartas/3C.png" alt="" />
-          <img class="carta" src="assets/cartas/3C.png" alt="" /> -->
+          <img class="carta" src="assets/cartas/3C.png" alt="" />
+          <img class="carta" src="assets/cartas/3C.png" alt="" />
         </div>
       </div>
     </div>

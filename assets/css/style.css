@@ -1,7 +1,14 @@
-html,
-body {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+html,
+body {
   background-color: #2f4f30;
   color: white;
 }
@@ -11,17 +18,81 @@ body {
   background-color: black;
   color: white;
   padding: 20px;
-  font-size: 25px;
+  font-size: 13px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carta-title {
+  width: 15px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.btn-start {
+  background-color: rgb(255, 52, 52);
+  border: none;
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.399);
+}
+
+.btn-start:hover {
+  background-color: red;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  background-color: rgb(63, 63, 252);
+  border: none;
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.399);
+}
+
+.btn:hover {
+  background-color: rgb(19, 19, 255);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-box {
+  padding: 1rem;
+}
+
+.title-card {
+  padding-bottom: 1rem;
 }
 
 .carta {
   position: relative;
-  width: 120px;
+  width: 100px;
   left: 100px;
   margin-left: -75px;
 }
 
 #computadora-cartas,
 #jugador-cartas {
-  height: 200px;
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  .title-container {
+    font-size: 30px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+  }
 }
