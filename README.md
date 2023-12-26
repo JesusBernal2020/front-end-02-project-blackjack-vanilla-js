@@ -41,7 +41,7 @@ The project is considered completed but open to improvements for enhancing funct
 
 ## Project Access
 
-You can access the deployed project via this [BlackJack](https://weather-app-jbx.netlify.app). Additionally, you can clone the project and run it locally.
+You can access the deployed project via this [BlackJack](https://blackjack-vl.netlify.app). Additionally, you can clone the project and run it locally.
 
 ## Developers
 
